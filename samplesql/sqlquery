@@ -1,1 +1,22 @@
+-- Create table
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    department VARCHAR(50),
+    salary INT
+);
+
+-- Insert data
+INSERT INTO employees VALUES (1, 'Ram', 'IT', 60000);
+INSERT INTO employees VALUES (2, 'Kiran', 'HR', 55000);
+INSERT INTO employees VALUES (3, 'Arun', 'IT', 70000);
+
+-- Select
+SELECT * FROM employees;
+
+-- Update
+UPDATE employees SET salary = salary + 5000 WHERE department = 'IT';
+
+-- Delete
+DELETE FROM employees WHERE id = 2;
 
